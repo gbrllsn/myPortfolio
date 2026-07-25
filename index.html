@@ -3,48 +3,96 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sean Gabrielle Torres | Portfolio</title>
+  <title>Sean Gabrielle Torres — IT Student & Data Analyst</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Hello, I'm <span class="highlight">Sean Gabrielle Torres</span></h1>
-    <p>3rd-Year IT Student & Aspiring Data Analyst</p>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <header class="hero">
+    <div class="terminal">
+      <div class="terminal__bar">
+        <span class="dot dot--red"></span>
+        <span class="dot dot--yellow"></span>
+        <span class="dot dot--green"></span>
+        <span class="terminal__title">sean.sh</span>
+      </div>
+      <div class="terminal__body">
+        <p class="line"><span class="prompt">$</span> whoami</p>
+        <h1 class="line line--output">Sean Gabrielle Torres</h1>
+        <p class="line"><span class="prompt">$</span> cat role.txt</p>
+        <p class="line line--output">3rd-Year IT Student &amp; Aspiring Data Analyst<span class="cursor" aria-hidden="true"></span></p>
+      </div>
+    </div>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I am an Information Technology student focused on building a strong foundation in data analysis, database systems (PostgreSQL, phpMyAdmin/MySQL), and software development. I enjoy transforming raw data into actionable insights and designing efficient relational database schemas.</p>
-  </section>
+  <main>
+    <section id="about">
+      <p class="eyebrow">-- about_me</p>
+      <h2>About</h2>
+      <p>I'm an Information Technology student building a strong foundation in data analysis, database systems (PostgreSQL, phpMyAdmin/MySQL), and software development. I like turning raw data into decisions worth acting on, and designing relational schemas that hold up under real use.</p>
+    </section>
 
-  <section id="skills">
-    <h2>Tech Stack & Tools</h2>
-    <div class="skills-list">
-      <p><strong>Languages:</strong> Python, JavaScript, PHP, SQL</p>
-      <p><strong>Databases:</strong> PostgreSQL, phpMyAdmin / MySQL</p>
-      <p><strong>Tools & Version Control:</strong> Git, GitHub, VS Code</p>
-    </div>
-  </section>
+    <section id="skills">
+      <p class="eyebrow">-- tech_stack</p>
+      <h2>Skills</h2>
+      <div class="query-block">
+        <p class="query">SELECT category, tools FROM skills;</p>
+        <table class="result-table">
+          <thead>
+            <tr><th>category</th><th>tools</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>languages</td><td>Python, JavaScript, PHP, SQL</td></tr>
+            <tr><td>databases</td><td>PostgreSQL, phpMyAdmin / MySQL</td></tr>
+            <tr><td>tooling</td><td>Git, GitHub, VS Code</td></tr>
+          </tbody>
+        </table>
+        <p class="query-footer">3 rows returned</p>
+      </div>
+    </section>
 
-  <section id="projects">
-    <h2>Academic & Data Projects</h2>
-    <div class="project-card">
-      <h3>Featured Project Title</h3>
-      <p>A brief summary of a project where you analyzed data, wrote complex SQL queries, or built a web/database solution using Python or PHP.</p>
-      <p><strong>Tech Stack:</strong> Python, SQL, PostgreSQL</p>
-      <a href="https://github.com/gbrllsn" target="_blank">View on GitHub</a>
-    </div>
-  </section>
+    <section id="projects">
+      <p class="eyebrow">-- projects</p>
+      <h2>Projects</h2>
 
-  <section id="contact">
-    <h2>Get In Touch</h2>
-    <p>I am actively seeking internship opportunities where I can learn and contribute!</p>
-    <p>Email: <a href="mailto:seangabrielletorres@gmail.com">seangabrielletorres@gmail.com</a></p>
-    <div class="social-links">
-      <a href="https://github.com/gbrllsn" target="_blank">GitHub</a> | 
-      <a href="https://www.linkedin.com/in/seangabt/" target="_blank">LinkedIn</a> | 
-      <a href="https://v2.onlinejobs.ph/jobseekers/info/4641904" target="_blank">OnlineJobs</a>
-    </div>
-  </section>
+      <!-- Swap this card's content for your real project. Duplicate the
+           whole .project-card block below it if you want to list more than one. -->
+      <div class="project-card">
+        <div class="project-card__bar">
+          <span class="dot dot--red"></span>
+          <span class="dot dot--yellow"></span>
+          <span class="dot dot--green"></span>
+          <span class="terminal__title">project_01.sql</span>
+        </div>
+        <div class="project-card__body">
+          <h3>Featured Project Title</h3>
+          <p>A brief summary of a project where you analyzed data, wrote complex SQL queries, or built a web/database solution using Python or PHP.</p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">SQL</span>
+            <span class="tag">PostgreSQL</span>
+          </div>
+          <a class="btn" href="https://github.com/gbrllsn" target="_blank" rel="noopener">View on GitHub →</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <p class="eyebrow">-- contact</p>
+      <h2>Get In Touch</h2>
+      <p>I'm actively looking for internship opportunities where I can learn and contribute.</p>
+      <a class="email-link" href="mailto:seangabrielletorres@gmail.com">seangabrielletorres@gmail.com</a>
+      <div class="social-links">
+        <a href="https://github.com/gbrllsn" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/seangabt/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://v2.onlinejobs.ph/jobseekers/info/4641904" target="_blank" rel="noopener">OnlineJobs</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Designed &amp; built by Sean Gabrielle Torres</p>
+  </footer>
 </body>
 </html>
