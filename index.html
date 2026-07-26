@@ -48,18 +48,50 @@
       </dl>
     </section>
 
-    <section id="work" class="section">
+    <section id="projects">
+      <p class="eyebrow">-- projects</p>
       <h2>Projects</h2>
 
-      <!-- Swap this card's content for your real project. Copy the whole
-           .project block below it if you want to list more than one. -->
-      <article class="project">
-        <h3>ecommerce_analytics.sql</h3>
-        <p>E-Commerce Sales & Customer Insights Analytics</p>
-        <p>Designed a relational PostgreSQL schema to model customer transactions. Executed analytical SQL queries using JOINs, aggregations, and CTEs to extract revenue metrics, customer lifetime value, and product trends.</p>
-        <p class="project__stack">SQL · PostgreSQL · Data Modeling</p>
-        <a class="link-arrow" href="https://github.com/gbrllsn/sql-analytics-project" target="_blank" rel="noopener">View on GitHub <span aria-hidden="true">→</span></a>
-      </article>
+      <!-- Project 1: Medallion Architecture & Star Schema -->
+      <div class="project-card">
+        <div class="project-card__bar">
+          <span class="dot dot--red"></span>
+          <span class="dot dot--yellow"></span>
+          <span class="dot dot--green"></span>
+          <span class="terminal__title">onlinestore_data_warehouse.sql</span>
+        </div>
+        <div class="project-card__body">
+          <h3>E-Commerce Data Warehouse (Medallion Architecture)</h3>
+          <p>Designed and built a full data warehouse pipeline using MySQL and phpMyAdmin. Transformed raw OLTP sales data across Bronze (raw), Silver (cleansed), and Gold (star schema analytical fact/dimension tables) layers for reporting.</p>
+          <div class="tags">
+            <span class="tag">MySQL</span>
+            <span class="tag">phpMyAdmin</span>
+            <span class="tag">Data Modeling</span>
+            <span class="tag">Star Schema</span>
+          </div>
+          <a class="btn" href="https://github.com/gbrllsn" target="_blank" rel="noopener">View on GitHub →</a>
+        </div>
+      </div>
+
+      <!-- Project 2: PostgreSQL E-Commerce Analytics -->
+      <div class="project-card" style="margin-top: 2rem;">
+        <div class="project-card__bar">
+          <span class="dot dot--red"></span>
+          <span class="dot dot--yellow"></span>
+          <span class="dot dot--green"></span>
+          <span class="terminal__title">ecommerce_analytics.sql</span>
+        </div>
+        <div class="project-card__body">
+          <h3>E-Commerce Sales & Customer Insights Analytics</h3>
+          <p>Designed a relational PostgreSQL schema to model customer transactions. Executed analytical SQL queries using JOINs, aggregations, and CTEs to extract revenue metrics, customer lifetime value, and product trends.</p>
+          <div class="tags">
+            <span class="tag">SQL</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">Data Modeling</span>
+          </div>
+          <a class="btn" href="https://github.com/gbrllsn/sql-analytics-project" target="_blank" rel="noopener">View on GitHub →</a>
+        </div>
+      </div>
     </section>
 
     <section id="contact" class="section section--contact">
