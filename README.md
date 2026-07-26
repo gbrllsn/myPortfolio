@@ -28,5 +28,5 @@ Welcome to the repository for my developer and data analyst portfolio! Built wit
 
 ## 📬 Contact
 - **Email:** seangabrielletorres@gmail.com
-- **LinkedIn:** [Sean Gabrielle Torres](https://www.linkedin.com/in/seangabt/)
+- **LinkedIn & OnlineJobs:** [Sean Gabrielle Torres](https://www.linkedin.com/in/seangabt/) (https://www.onlinejobs.ph/jobseekers/info/4641904/)
 - **GitHub:** [@gbrllsn](https://github.com/gbrllsn)
