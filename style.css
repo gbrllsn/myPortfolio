@@ -127,6 +127,36 @@ button:focus-visible {
   animation: rise 0.6s ease both;
 }
 
+.avatar {
+  width: 112px;
+  height: 112px;
+  margin: 0 auto 1.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--surface);
+  border: 1px solid var(--divider);
+  box-shadow: 0 0 0 6px rgba(41, 151, 255, 0.08);
+  font-size: 1.9rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--text);
+}
+
+.avatar--photo {
+  object-fit: cover;
+  border: 2px solid var(--divider);
+}
+
+.hero__actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2.25rem;
+}
+
 .eyebrow {
   font-size: 0.8rem;
   font-weight: 600;
@@ -184,6 +214,34 @@ main {
   max-width: 58ch;
 }
 
+.highlights {
+  list-style: none;
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  max-width: 58ch;
+}
+
+.highlights li {
+  position: relative;
+  padding-left: 1.4rem;
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+.highlights li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.5em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
 /* ---------- skills spec list ---------- */
 
 .spec-list {
@@ -231,12 +289,48 @@ main {
 
 /* ---------- project ---------- */
 
+.project-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
 .project {
+  position: relative;
   background: var(--surface);
   border-radius: 18px;
   padding: 2rem;
   border: 1px solid var(--divider);
   transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.project__badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  background: var(--accent-soft);
+  padding: 0.3rem 0.65rem;
+  border-radius: 999px;
+  margin-bottom: 0.9rem;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.1rem;
+}
+
+.tag {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  border: 1px solid var(--divider);
+  border-radius: 999px;
+  padding: 0.3rem 0.75rem;
 }
 
 .project:hover {
@@ -315,6 +409,25 @@ main {
   box-shadow: 0 3px 14px rgba(41, 151, 255, 0.3);
 }
 
+.btn--ghost {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--divider);
+  box-shadow: none;
+}
+
+.btn--ghost:hover {
+  background: transparent;
+  color: var(--accent);
+  border-color: var(--accent);
+  box-shadow: none;
+  transform: translateY(-1px);
+}
+
+.btn--ghost:active {
+  transform: translateY(0);
+}
+
 .social-links {
   display: flex;
   justify-content: center;
@@ -376,5 +489,21 @@ footer p {
 
   .project:hover {
     transform: none;
+  }
+
+  .hero__actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero__actions .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .avatar {
+    width: 92px;
+    height: 92px;
+    font-size: 1.5rem;
   }
 }
